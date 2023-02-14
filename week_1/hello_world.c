@@ -6,40 +6,11 @@
 int main(void) {
 
     printf("Hello World\n");
+    printf(" /\\___/\\\n");
+    printf("(=' w '=)\n");
 
     return 0;
 }
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-//   /\___/
-//  (=' w '=)
+ 
