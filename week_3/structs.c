@@ -11,11 +11,19 @@ struct person {
 };
 
 int main(void) {
-    // initialise struct person
 
+    // initialise struct person
+    struct person nicole;
+    // initialise the values inside the struct person you 
+    // just created
+    nicole.height = 200;
+    nicole.first_name_initial = 'n';
+    nicole.fav_number = 12;
 
     // print a struct person
+    printf("my height is %.2lf, first name initial is %c," 
+            "and fav number is %d\n", nicole.height, 
+            nicole.first_name_initial, nicole.fav_number);
 
-    
     return 0;
 }
