@@ -26,7 +26,7 @@ int main(void) {
         {'O', 'X', 'O', 'O', 'O'},
         {' ', 'X', ' ', ' ', 'O'},
     };
-    char no_wins_board[SIZE][SIZE] = {
+    char o_wins_board[SIZE][SIZE] = {
         {'O', 'X', ' ', ' ', 'X'},
         {' ', 'X', ' ', ' ', ' '},
         {' ', 'X', 'O', ' ', ' '},
