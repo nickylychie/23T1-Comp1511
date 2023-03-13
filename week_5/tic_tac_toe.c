@@ -50,9 +50,5 @@ int main(void) {
 // player = 'O' or 'X' ,    SIZE = 5
 int did_player_win(char player, char board[SIZE][SIZE]) {
 
-    // check horizontal + vertical
-
-    // check diagonal left and right
-
-    return FALSE;
+    // what ways can a player win?
 }
