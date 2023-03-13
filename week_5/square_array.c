@@ -13,7 +13,7 @@ square_array()
     - takes in an array of size length
     - squares all the elements inside the array
 */
-? square_array(?);
+void square_array(int length, array[length]);
 
 int main(void) {
 

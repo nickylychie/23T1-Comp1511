@@ -50,5 +50,61 @@ int main(void) {
 // player = 'O' or 'X' ,    SIZE = 5
 int did_player_win(char player, char board[SIZE][SIZE]) {
 
-    // what ways can a player win?
+    // horizontally
+    int h_row = 0;
+    for (int i = 0; i < SIZE; i++) {
+        for (int j = 0; j < SIZE; j++) {
+            if (board[i][j] == player) {
+                h_row++;
+            }
+        }
+
+        if (h_row == 5) {
+            return TRUE;
+        }
+        h_row = 0;
+    }
+
+    // vertically
+    int v_row = 0;
+    for (int i = 0; i < SIZE; i++) {
+        for (int j = 0; j < SIZE; j++) {
+            if (board[j][i] == player) {
+                v_row++;
+            }
+        }
+
+        if (v_row == 5) {
+            return TRUE;
+        }
+        v_row = 0;
+    }
+
+    // diagonally from the left
+    int dl_row = 0;
+    for (int i = 0; i < SIZE; i++) {
+        for (int j = 0; j < SIZE; j++) {
+            if (i == j && board[i][j] == player) {
+                dl_row++;
+            }
+        }
+    }
+    if (dl_row == 5) {
+        return TRUE;
+    }
+
+    // diagonally from the right
+    int dr_row = 0;
+    for (int i = 0; i < SIZE; i++) {
+        for (int j = 0; j < SIZE; j++) {
+            if (i + j + 1 == SIZE && board[j][i] == player) {
+                dr_row++;
+            }
+        }
+    }
+    if (dr_row == 5) {
+        return TRUE;
+    }
+
+    return FALSE;
 }

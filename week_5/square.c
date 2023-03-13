@@ -3,9 +3,7 @@
 
 #include <stdio.h>
 
-void square(int x) {
-    x = x * x;
-}
+int square(int x);
 
 int main(void) {
 
@@ -16,9 +14,14 @@ int main(void) {
     printf("value before square: %d\n", input);
 
     //call square, copying the value of input into `int x`
-    square(input);
+    int squared_input = square(input);
 
-    printf("value after square: %d\n", input);
+    printf("value after square: %d\n", squared_input);
 
     return 0;
+}
+
+int square(int x) {
+    x = x * x;
+    return x;
 }
